@@ -1,0 +1,140 @@
+{
+  "majors": [
+    {
+      "label": "Computer Science / Technology",
+      "keywords": ["computer", "software", "cs", "comp sci", "compsci", "coding", "programming", "cyber", "data", "information technology", "information systems", "artificial intelligence"],
+      "relatedKeywords": ["code", "coding", "programming", "computer", "app", "website", "web", "robot", "hackathon", "cyber", "software", "tech", "game", "data", "stem"],
+      "relatedCategories": [],
+      "ideas": [
+        "Build an app or website that solves a real problem at your school or in your community",
+        "Join or start a coding club",
+        "Compete in the Congressional App Challenge or a hackathon",
+        "Join a robotics team"
+      ],
+      "serviceIdea": "Teach a free coding or tech-help class at a library, senior center or elementary school.",
+      "summerIdea": "a summer coding program, a tech internship, or a personal project you can show colleges"
+    },
+    {
+      "label": "Engineering",
+      "keywords": ["engineer", "aerospace", "mechanical", "electrical", "civil", "architecture"],
+      "relatedKeywords": ["robot", "engineer", "science olympiad", "build", "maker", "cad", "3d", "rocket", "physics", "stem", "design"],
+      "relatedCategories": ["Research"],
+      "ideas": [
+        "Join a robotics team",
+        "Compete in Science Olympiad",
+        "Build something (a drone, model rocket or 3D-printed tool) and document how you did it",
+        "Enter a science fair or engineering design competition"
+      ],
+      "serviceIdea": "Help run a STEM night or mentor a middle-school robotics or science team.",
+      "summerIdea": "a summer engineering camp, a hands-on build project, or a job working with tools or machines"
+    },
+    {
+      "label": "Pre-Med / Health",
+      "keywords": ["pre-med", "premed", "pre med", "medic", "doctor", "nurs", "health", "bio", "neuro", "pharm", "kinesiology", "physical therapy", "dental", "vet", "pre-vet", "chem"],
+      "relatedKeywords": ["hospital", "health", "medic", "hosa", "clinic", "nurs", "biology", "science", "research", "red cross", "emt", "first aid", "cpr", "lab", "patient", "doctor", "shadow", "caregiv"],
+      "relatedCategories": ["Research"],
+      "ideas": [
+        "Volunteer at a hospital, clinic or nursing home",
+        "Join HOSA – Future Health Professionals",
+        "Shadow a doctor, nurse or other health professional",
+        "Apply to a summer science or research program"
+      ],
+      "serviceIdea": "Volunteer at a hospital, nursing home, blood drive or health fair.",
+      "summerIdea": "a summer science or research program, a CPR/first-aid certification, or a job in a care setting"
+    },
+    {
+      "label": "Business",
+      "keywords": ["business", "financ", "account", "marketing", "econ", "entrepreneur", "management"],
+      "relatedKeywords": ["deca", "fbla", "business", "sell", "shop", "store", "financ", "invest", "econ", "entrepreneur", "market", "fundrais", "startup", "treasurer"],
+      "relatedCategories": ["Work/job", "Starting something"],
+      "ideas": [
+        "Join DECA or FBLA",
+        "Start a small business (tutoring, reselling, lawn care, crafts) and track your revenue",
+        "Get a part-time job — it shows responsibility and real-world skills",
+        "Join or start an investing or economics club"
+      ],
+      "serviceIdea": "Run a fundraiser for a local cause and keep track of how much you raise.",
+      "summerIdea": "a summer job, a small business of your own, or a business/entrepreneurship summer program"
+    },
+    {
+      "label": "Law / Government",
+      "keywords": ["law", "pre-law", "prelaw", "legal", "politic", "government", "poli sci", "international relations", "public policy", "criminal", "criminology", "history"],
+      "relatedKeywords": ["debate", "model un", "mun", "mock trial", "student government", "council", "government", "politic", "law", "legal", "speech", "campaign", "history", "civic"],
+      "relatedCategories": ["Leadership/student government"],
+      "ideas": [
+        "Join the debate or speech team",
+        "Join Model UN",
+        "Join Mock Trial",
+        "Run for student government or join a local youth council"
+      ],
+      "serviceIdea": "Volunteer for a voter registration drive, a local campaign or a legal aid organization.",
+      "summerIdea": "a youth government program, an internship with a local official, or a civics project in your community"
+    },
+    {
+      "label": "English / Communications",
+      "keywords": ["english", "writ", "journalism", "communication", "media", "literature"],
+      "relatedKeywords": ["newspaper", "journal", "yearbook", "magazine", "writ", "blog", "podcast", "media", "literary", "poetry", "debate", "speech", "video", "radio", "broadcast"],
+      "relatedCategories": [],
+      "ideas": [
+        "Write for the school newspaper, yearbook or literary magazine",
+        "Join the debate or speech team",
+        "Start a blog, podcast or video channel about a topic you care about",
+        "Enter writing contests, like the Scholastic Art & Writing Awards"
+      ],
+      "serviceIdea": "Tutor younger students in reading or writing, or help at a library literacy program.",
+      "summerIdea": "a summer writing workshop, a local newspaper internship, or building a writing portfolio"
+    },
+    {
+      "label": "Psychology / Education / Social Sciences",
+      "keywords": ["psych", "sociology", "social work", "education", "teach", "anthropology", "social science"],
+      "relatedKeywords": ["tutor", "mentor", "peer", "counsel", "teach", "psych", "mental health", "camp", "child", "kids", "coach"],
+      "relatedCategories": ["Research"],
+      "ideas": [
+        "Become a peer tutor or peer mentor",
+        "Join or start a mental-health awareness club",
+        "Work as a camp counselor or youth coach",
+        "Run a survey or research project at your school with a teacher's guidance"
+      ],
+      "serviceIdea": "Volunteer with kids, seniors or a community support organization.",
+      "summerIdea": "a camp counselor job, a tutoring program, or a summer psychology or education course"
+    },
+    {
+      "label": "Arts / Design",
+      "keywords": ["art", "design", "music", "theater", "theatre", "drama", "dance", "film", "animation", "graphic", "photo"],
+      "relatedKeywords": ["art", "band", "orchestra", "choir", "music", "theater", "theatre", "drama", "dance", "design", "paint", "draw", "photo", "film", "portfolio", "gallery", "musical"],
+      "relatedCategories": ["Arts"],
+      "ideas": [
+        "Build a portfolio of your best work",
+        "Enter competitions or juried shows, like the Scholastic Art & Writing Awards",
+        "Join or lead a school ensemble, production or art club",
+        "Exhibit, perform or sell your work, or create art for a local cause"
+      ],
+      "serviceIdea": "Teach art or music to younger kids, or create a mural or performance for a community event.",
+      "summerIdea": "a summer arts program, a portfolio project, or teaching or performing at a summer camp"
+    },
+    {
+      "label": "Environment / Agriculture",
+      "keywords": ["environment", "ecology", "conservation", "agricultur", "animal", "forestry", "sustainab", "marine"],
+      "relatedKeywords": ["environment", "green", "garden", "recycl", "climate", "nature", "4-h", "ffa", "animal", "farm", "conservation", "outdoor", "sustainab"],
+      "relatedCategories": [],
+      "ideas": [
+        "Join or start an environmental or sustainability club",
+        "Join FFA or 4-H",
+        "Lead a community garden, recycling or cleanup project and measure the results",
+        "Compete in Envirothon or a local science fair"
+      ],
+      "serviceIdea": "Volunteer with a park, nature center, animal shelter or watershed group.",
+      "summerIdea": "a park or nature center job, a field research program, or work on a farm"
+    }
+  ],
+  "undecided": {
+    "label": "Undecided",
+    "ideas": [
+      "Try one or two new clubs this year to see what clicks",
+      "Pick something you already enjoy and go deeper",
+      "Get a part-time job — it builds skills and counts as a real activity"
+    ],
+    "serviceIdea": "Volunteer somewhere connected to something you already enjoy.",
+    "summerIdea": "a summer job, a free online course in a subject you're curious about, or an independent project"
+  }
+}

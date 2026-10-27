@@ -1,0 +1,3111 @@
+{
+ "notes": [
+  "AP course names match the College Board's AP course list (apcentral.collegeboard.org/courses), checked 2026-10-25: all 40 AP courses (including exactly 8 world languages and the 2 AP Capstone courses), plus the 3 newer AP Career Kickstart courses (AP Business with Personal Finance, AP Cybersecurity, AP Networking), which are marked as newer because many schools don't offer them yet.",
+  "AP Physics 1 and 2 use the official names 'AP Physics 1: Algebra-Based' and 'AP Physics 2: Algebra-Based'. US History, US Government and the language courses also use official full names, with common short names (e.g. 'APUSH', 'AP Spanish') as search aliases.",
+  "Unsure: IB Environmental Systems and Societies was SL-only before the 2024 syllabus update, which added HL; both are listed. IB Latin is officially 'Classical Languages: Latin'. IB Theory of Knowledge has no SL/HL, so it uses the level 'IB'.",
+  "Regular/Honors/Dual Enrollment availability is set by each school; this catalog allows Honors for standard core courses and Dual Enrollment for upper-level core academic courses (where a local college class would normally replace the high school course).",
+  "Typical grades and prerequisites are common patterns, not rules — schools vary."
+ ],
+ "subjects": [
+  "English",
+  "Math",
+  "Science",
+  "Social Studies",
+  "World Language",
+  "Arts",
+  "Computer Science",
+  "Electives"
+ ],
+ "levels": [
+  "Regular",
+  "Honors",
+  "AP",
+  "IB SL",
+  "IB HL",
+  "IB",
+  "Dual Enrollment"
+ ],
+ "courses": [
+  {
+   "id": "english-9",
+   "name": "English 9",
+   "subject": "English",
+   "type": "Core",
+   "description": "Reading fiction, nonfiction and poetry while building essay-writing and grammar skills.",
+   "grades": [
+    9
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "english",
+   "step": 1,
+   "aliases": [
+    "English I",
+    "Freshman English"
+   ]
+  },
+  {
+   "id": "english-10",
+   "name": "English 10",
+   "subject": "English",
+   "type": "Core",
+   "description": "Deeper literary analysis and argument writing, often with a world-literature focus.",
+   "grades": [
+    10
+   ],
+   "prerequisites": [
+    "English 9"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "english",
+   "step": 2,
+   "aliases": [
+    "English II"
+   ]
+  },
+  {
+   "id": "english-11",
+   "name": "English 11",
+   "subject": "English",
+   "type": "Core",
+   "description": "American literature and research writing; many schools pair it with US History.",
+   "grades": [
+    11
+   ],
+   "prerequisites": [
+    "English 10"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "english",
+   "step": 3,
+   "aliases": [
+    "English III",
+    "American Literature"
+   ]
+  },
+  {
+   "id": "english-12",
+   "name": "English 12",
+   "subject": "English",
+   "type": "Core",
+   "description": "British or world literature plus college-style writing to finish the four-year sequence.",
+   "grades": [
+    12
+   ],
+   "prerequisites": [
+    "English 11"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "english",
+   "step": 4,
+   "aliases": [
+    "English IV",
+    "British Literature"
+   ]
+  },
+  {
+   "id": "creative-writing",
+   "name": "Creative Writing",
+   "subject": "English",
+   "type": "Elective",
+   "description": "Writing your own fiction, poetry and personal essays, with peer workshops.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ]
+  },
+  {
+   "id": "journalism",
+   "name": "Journalism",
+   "subject": "English",
+   "type": "Elective",
+   "description": "Reporting, interviewing and writing news; often connected to the school newspaper.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ]
+  },
+  {
+   "id": "speech-and-debate",
+   "name": "Speech and Debate",
+   "subject": "English",
+   "type": "Elective",
+   "description": "Public speaking, research and structured argument; often feeds the debate team.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ]
+  },
+  {
+   "id": "ap-english-language-and-composition",
+   "name": "AP English Language and Composition",
+   "subject": "English",
+   "type": "AP",
+   "description": "College-level rhetoric: analyzing how writers argue and writing your own arguments.",
+   "grades": [
+    11
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "track": "english",
+   "step": 3,
+   "aliases": [
+    "AP Lang",
+    "AP English Language"
+   ]
+  },
+  {
+   "id": "ap-english-literature-and-composition",
+   "name": "AP English Literature and Composition",
+   "subject": "English",
+   "type": "AP",
+   "description": "College-level close reading of fiction, poetry and drama, with analytical essays.",
+   "grades": [
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "track": "english",
+   "step": 4,
+   "aliases": [
+    "AP Lit",
+    "AP English Literature"
+   ]
+  },
+  {
+   "id": "ib-english-a-literature",
+   "name": "IB English A: Literature",
+   "subject": "English",
+   "type": "IB",
+   "description": "IB Diploma literature course built around close reading of works in translation and in English.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "track": "english",
+   "step": 4
+  },
+  {
+   "id": "ib-english-a-language-and-literature",
+   "name": "IB English A: Language and Literature",
+   "subject": "English",
+   "type": "IB",
+   "description": "IB Diploma course studying literary works alongside media, speeches and other non-literary texts.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "track": "english",
+   "step": 4
+  },
+  {
+   "id": "algebra-i",
+   "name": "Algebra I",
+   "subject": "Math",
+   "type": "Core",
+   "description": "Linear equations, inequalities, functions and graphing — the foundation for later math.",
+   "grades": [
+    8,
+    9
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "math",
+   "step": 1,
+   "aliases": [
+    "Algebra 1"
+   ]
+  },
+  {
+   "id": "geometry",
+   "name": "Geometry",
+   "subject": "Math",
+   "type": "Core",
+   "description": "Shapes, proofs, area, volume and trigonometry basics.",
+   "grades": [
+    9,
+    10
+   ],
+   "prerequisites": [
+    "Algebra I"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "math",
+   "step": 2
+  },
+  {
+   "id": "algebra-ii",
+   "name": "Algebra II",
+   "subject": "Math",
+   "type": "Core",
+   "description": "Quadratic, polynomial, exponential and logarithmic functions.",
+   "grades": [
+    10,
+    11
+   ],
+   "prerequisites": [
+    "Algebra I",
+    "Geometry"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "math",
+   "step": 3,
+   "aliases": [
+    "Algebra 2"
+   ]
+  },
+  {
+   "id": "integrated-math-i",
+   "name": "Integrated Math I",
+   "subject": "Math",
+   "type": "Core",
+   "description": "Combines algebra, geometry and statistics in one course (called NC Math 1 in North Carolina).",
+   "grades": [
+    8,
+    9
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "math",
+   "step": 1,
+   "aliases": [
+    "NC Math 1",
+    "Math 1"
+   ]
+  },
+  {
+   "id": "integrated-math-ii",
+   "name": "Integrated Math II",
+   "subject": "Math",
+   "type": "Core",
+   "description": "Second year of integrated math: quadratics, similarity and probability (NC Math 2).",
+   "grades": [
+    9,
+    10
+   ],
+   "prerequisites": [
+    "Integrated Math I"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "math",
+   "step": 2,
+   "aliases": [
+    "NC Math 2",
+    "Math 2"
+   ]
+  },
+  {
+   "id": "integrated-math-iii",
+   "name": "Integrated Math III",
+   "subject": "Math",
+   "type": "Core",
+   "description": "Third year of integrated math: advanced functions, trigonometry and modeling (NC Math 3).",
+   "grades": [
+    10,
+    11
+   ],
+   "prerequisites": [
+    "Integrated Math II"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "math",
+   "step": 3,
+   "aliases": [
+    "NC Math 3",
+    "Math 3"
+   ]
+  },
+  {
+   "id": "pre-calculus",
+   "name": "Pre-Calculus",
+   "subject": "Math",
+   "type": "Core",
+   "description": "Advanced functions and trigonometry to get ready for calculus.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Algebra II"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "math",
+   "step": 4,
+   "aliases": [
+    "Precalculus",
+    "Pre-Calc"
+   ]
+  },
+  {
+   "id": "calculus",
+   "name": "Calculus",
+   "subject": "Math",
+   "type": "Core",
+   "description": "Limits, derivatives and integrals at a non-AP pace.",
+   "grades": [
+    12
+   ],
+   "prerequisites": [
+    "Pre-Calculus"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "math",
+   "step": 5
+  },
+  {
+   "id": "statistics",
+   "name": "Statistics",
+   "subject": "Math",
+   "type": "Core",
+   "description": "Collecting data, describing it and drawing conclusions with probability.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Algebra II"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ]
+  },
+  {
+   "id": "math-analysis-and-modeling",
+   "name": "Math Analysis and Modeling",
+   "subject": "Math",
+   "type": "Elective",
+   "description": "Applied math using real data for students who finish Algebra II but aren't heading to calculus.",
+   "grades": [
+    12
+   ],
+   "prerequisites": [
+    "Algebra II"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "math",
+   "step": 4
+  },
+  {
+   "id": "ap-precalculus",
+   "name": "AP Precalculus",
+   "subject": "Math",
+   "type": "AP",
+   "description": "College-level functions course (polynomial, exponential, trig) that prepares you for AP Calculus.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Algebra II"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "track": "math",
+   "step": 4
+  },
+  {
+   "id": "ap-calculus-ab",
+   "name": "AP Calculus AB",
+   "subject": "Math",
+   "type": "AP",
+   "description": "First-semester college calculus: limits, derivatives and integrals.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Pre-Calculus"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "track": "math",
+   "step": 5,
+   "aliases": [
+    "AP Calc AB"
+   ]
+  },
+  {
+   "id": "ap-calculus-bc",
+   "name": "AP Calculus BC",
+   "subject": "Math",
+   "type": "AP",
+   "description": "Full-year college calculus covering AB topics plus series and parametric/polar functions.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Pre-Calculus"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "track": "math",
+   "step": 6,
+   "aliases": [
+    "AP Calc BC"
+   ]
+  },
+  {
+   "id": "ap-statistics",
+   "name": "AP Statistics",
+   "subject": "Math",
+   "type": "AP",
+   "description": "College-level statistics: data, probability, sampling and inference.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Algebra II"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "aliases": [
+    "AP Stats"
+   ]
+  },
+  {
+   "id": "ib-math-analysis-and-approaches",
+   "name": "IB Math: Analysis and Approaches",
+   "subject": "Math",
+   "type": "IB",
+   "description": "IB Diploma math focused on algebra, functions and calculus; HL is very demanding.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Algebra II"
+   ],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "track": "math",
+   "step": 5,
+   "aliases": [
+    "IB Math AA"
+   ]
+  },
+  {
+   "id": "ib-math-applications-and-interpretation",
+   "name": "IB Math: Applications and Interpretation",
+   "subject": "Math",
+   "type": "IB",
+   "description": "IB Diploma math focused on modeling, statistics and technology.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Algebra II"
+   ],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "track": "math",
+   "step": 4,
+   "aliases": [
+    "IB Math AI"
+   ]
+  },
+  {
+   "id": "physical-science",
+   "name": "Physical Science",
+   "subject": "Science",
+   "type": "Core",
+   "description": "Introductory chemistry and physics concepts with hands-on labs.",
+   "grades": [
+    9
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "lab": true
+  },
+  {
+   "id": "earth-science",
+   "name": "Earth Science",
+   "subject": "Science",
+   "type": "Core",
+   "description": "Geology, weather, oceans and space science with lab work.",
+   "grades": [
+    9
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "lab": true,
+   "aliases": [
+    "Earth and Space Science"
+   ]
+  },
+  {
+   "id": "biology",
+   "name": "Biology",
+   "subject": "Science",
+   "type": "Core",
+   "description": "Cells, genetics, evolution and ecosystems, with lab investigations.",
+   "grades": [
+    9,
+    10
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "lab": true,
+   "track": "biology",
+   "step": 1,
+   "aliases": [
+    "Biology I"
+   ]
+  },
+  {
+   "id": "chemistry",
+   "name": "Chemistry",
+   "subject": "Science",
+   "type": "Core",
+   "description": "Atoms, reactions, stoichiometry and the periodic table, with lab work.",
+   "grades": [
+    10,
+    11
+   ],
+   "prerequisites": [
+    "Algebra I"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "lab": true,
+   "track": "chemistry",
+   "step": 1,
+   "aliases": [
+    "Chemistry I"
+   ]
+  },
+  {
+   "id": "physics",
+   "name": "Physics",
+   "subject": "Science",
+   "type": "Core",
+   "description": "Motion, forces, energy, waves and electricity, with labs.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Algebra II"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "lab": true,
+   "track": "physics",
+   "step": 1,
+   "aliases": [
+    "Physics I"
+   ]
+  },
+  {
+   "id": "environmental-science",
+   "name": "Environmental Science",
+   "subject": "Science",
+   "type": "Core",
+   "description": "How natural systems work and how people affect them, with field and lab work.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "lab": true
+  },
+  {
+   "id": "anatomy-and-physiology",
+   "name": "Anatomy and Physiology",
+   "subject": "Science",
+   "type": "Elective",
+   "description": "How the human body's systems are built and work together; popular with future health majors.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Biology"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "lab": true
+  },
+  {
+   "id": "forensic-science",
+   "name": "Forensic Science",
+   "subject": "Science",
+   "type": "Elective",
+   "description": "Applying biology and chemistry to crime-scene evidence.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Biology"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "lab": true
+  },
+  {
+   "id": "marine-biology",
+   "name": "Marine Biology",
+   "subject": "Science",
+   "type": "Elective",
+   "description": "Ocean ecosystems and the organisms that live in them.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Biology"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "lab": true
+  },
+  {
+   "id": "ap-biology",
+   "name": "AP Biology",
+   "subject": "Science",
+   "type": "AP",
+   "description": "College-level biology: molecules, cells, genetics, evolution and ecology, with labs.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Biology",
+    "Chemistry"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "lab": true,
+   "track": "biology",
+   "step": 2,
+   "aliases": [
+    "AP Bio"
+   ]
+  },
+  {
+   "id": "ap-chemistry",
+   "name": "AP Chemistry",
+   "subject": "Science",
+   "type": "AP",
+   "description": "College-level chemistry with heavy math and lab work.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Chemistry",
+    "Algebra II"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "lab": true,
+   "track": "chemistry",
+   "step": 2,
+   "aliases": [
+    "AP Chem"
+   ]
+  },
+  {
+   "id": "ap-environmental-science",
+   "name": "AP Environmental Science",
+   "subject": "Science",
+   "type": "AP",
+   "description": "College-level environmental science combining biology, chemistry and earth science, with labs.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "lab": true,
+   "aliases": [
+    "APES"
+   ]
+  },
+  {
+   "id": "ap-physics-1-algebra-based",
+   "name": "AP Physics 1: Algebra-Based",
+   "subject": "Science",
+   "type": "AP",
+   "description": "College-level mechanics (motion, forces, energy) using algebra, with labs.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Geometry"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "lab": true,
+   "track": "physics",
+   "step": 2,
+   "aliases": [
+    "AP Physics 1"
+   ]
+  },
+  {
+   "id": "ap-physics-2-algebra-based",
+   "name": "AP Physics 2: Algebra-Based",
+   "subject": "Science",
+   "type": "AP",
+   "description": "College-level fluids, thermodynamics, electricity, magnetism and optics using algebra.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "AP Physics 1: Algebra-Based"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "lab": true,
+   "track": "physics",
+   "step": 3,
+   "aliases": [
+    "AP Physics 2"
+   ]
+  },
+  {
+   "id": "ap-physics-c-mechanics",
+   "name": "AP Physics C: Mechanics",
+   "subject": "Science",
+   "type": "AP",
+   "description": "Calculus-based college mechanics; common for future engineers.",
+   "grades": [
+    12
+   ],
+   "prerequisites": [
+    "AP Calculus AB"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "lab": true,
+   "track": "physics",
+   "step": 3,
+   "aliases": [
+    "AP Physics C"
+   ]
+  },
+  {
+   "id": "ap-physics-c-electricity-and-magnetism",
+   "name": "AP Physics C: Electricity and Magnetism",
+   "subject": "Science",
+   "type": "AP",
+   "description": "Calculus-based college electricity and magnetism.",
+   "grades": [
+    12
+   ],
+   "prerequisites": [
+    "AP Physics C: Mechanics"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "lab": true,
+   "track": "physics",
+   "step": 4,
+   "aliases": [
+    "AP Physics C E&M"
+   ]
+  },
+  {
+   "id": "ib-biology",
+   "name": "IB Biology",
+   "subject": "Science",
+   "type": "IB",
+   "description": "IB Diploma biology with an independent investigation.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Biology"
+   ],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "lab": true,
+   "track": "biology",
+   "step": 2
+  },
+  {
+   "id": "ib-chemistry",
+   "name": "IB Chemistry",
+   "subject": "Science",
+   "type": "IB",
+   "description": "IB Diploma chemistry with an independent investigation.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Chemistry"
+   ],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "lab": true,
+   "track": "chemistry",
+   "step": 2
+  },
+  {
+   "id": "ib-physics",
+   "name": "IB Physics",
+   "subject": "Science",
+   "type": "IB",
+   "description": "IB Diploma physics with an independent investigation.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "lab": true,
+   "track": "physics",
+   "step": 2
+  },
+  {
+   "id": "ib-environmental-systems-and-societies",
+   "name": "IB Environmental Systems and Societies",
+   "subject": "Science",
+   "type": "IB",
+   "description": "IB course linking ecology with human societies; counts as a science (and social science) in the Diploma.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "lab": true,
+   "aliases": [
+    "IB ESS"
+   ]
+  },
+  {
+   "id": "world-geography",
+   "name": "World Geography",
+   "subject": "Social Studies",
+   "type": "Core",
+   "description": "Places, cultures, populations and how people interact with their environment.",
+   "grades": [
+    9
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ]
+  },
+  {
+   "id": "world-history",
+   "name": "World History",
+   "subject": "Social Studies",
+   "type": "Core",
+   "description": "Major civilizations and global events from ancient times to today.",
+   "grades": [
+    9,
+    10
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ]
+  },
+  {
+   "id": "us-history",
+   "name": "US History",
+   "subject": "Social Studies",
+   "type": "Core",
+   "description": "American history from early settlement to the present.",
+   "grades": [
+    10,
+    11
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "us-history",
+   "step": 1,
+   "aliases": [
+    "U.S. History",
+    "American History",
+    "United States History"
+   ]
+  },
+  {
+   "id": "civics",
+   "name": "Civics",
+   "subject": "Social Studies",
+   "type": "Core",
+   "description": "How US government works and how citizens take part; often a one-semester course.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "aliases": [
+    "Government",
+    "American Government",
+    "Civics and Government"
+   ]
+  },
+  {
+   "id": "economics",
+   "name": "Economics",
+   "subject": "Social Studies",
+   "type": "Core",
+   "description": "Supply and demand, markets, money and government's role in the economy; often one semester.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "aliases": [
+    "Economics and Personal Finance"
+   ]
+  },
+  {
+   "id": "psychology",
+   "name": "Psychology",
+   "subject": "Social Studies",
+   "type": "Elective",
+   "description": "Introduction to how people think, feel and behave.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ]
+  },
+  {
+   "id": "sociology",
+   "name": "Sociology",
+   "subject": "Social Studies",
+   "type": "Elective",
+   "description": "How groups, institutions and culture shape people's lives.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ]
+  },
+  {
+   "id": "ap-united-states-history",
+   "name": "AP United States History",
+   "subject": "Social Studies",
+   "type": "AP",
+   "description": "College-level US history with document-based essays.",
+   "grades": [
+    10,
+    11
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "track": "us-history",
+   "step": 2,
+   "aliases": [
+    "AP US History",
+    "APUSH"
+   ]
+  },
+  {
+   "id": "ap-world-history-modern",
+   "name": "AP World History: Modern",
+   "subject": "Social Studies",
+   "type": "AP",
+   "description": "College-level world history from 1200 CE to the present.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "aliases": [
+    "AP World History",
+    "AP World"
+   ]
+  },
+  {
+   "id": "ap-european-history",
+   "name": "AP European History",
+   "subject": "Social Studies",
+   "type": "AP",
+   "description": "College-level European history from about 1450 to the present.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "aliases": [
+    "AP Euro"
+   ]
+  },
+  {
+   "id": "ap-united-states-government-and-politics",
+   "name": "AP United States Government and Politics",
+   "subject": "Social Studies",
+   "type": "AP",
+   "description": "College-level study of US political institutions, ideas and behavior.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "aliases": [
+    "AP US Government",
+    "AP Gov"
+   ]
+  },
+  {
+   "id": "ap-comparative-government-and-politics",
+   "name": "AP Comparative Government and Politics",
+   "subject": "Social Studies",
+   "type": "AP",
+   "description": "College-level comparison of political systems in six countries.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "aliases": [
+    "AP Comparative Government"
+   ]
+  },
+  {
+   "id": "ap-human-geography",
+   "name": "AP Human Geography",
+   "subject": "Social Studies",
+   "type": "AP",
+   "description": "College-level study of population, culture, cities and land use; often taken in 9th grade.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "aliases": [
+    "AP Human Geo",
+    "APHG"
+   ]
+  },
+  {
+   "id": "ap-macroeconomics",
+   "name": "AP Macroeconomics",
+   "subject": "Social Studies",
+   "type": "AP",
+   "description": "College-level study of the economy as a whole: GDP, inflation, money and policy.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "aliases": [
+    "AP Macro"
+   ]
+  },
+  {
+   "id": "ap-microeconomics",
+   "name": "AP Microeconomics",
+   "subject": "Social Studies",
+   "type": "AP",
+   "description": "College-level study of how individuals and businesses make decisions in markets.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "aliases": [
+    "AP Micro"
+   ]
+  },
+  {
+   "id": "ap-psychology",
+   "name": "AP Psychology",
+   "subject": "Social Studies",
+   "type": "AP",
+   "description": "College-level introduction to psychology and research methods.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "aliases": [
+    "AP Psych"
+   ]
+  },
+  {
+   "id": "ap-african-american-studies",
+   "name": "AP African American Studies",
+   "subject": "Social Studies",
+   "type": "AP",
+   "description": "College-level, interdisciplinary study of African American history, culture and contributions.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "aliases": [
+    "AP AAS"
+   ]
+  },
+  {
+   "id": "ib-history",
+   "name": "IB History",
+   "subject": "Social Studies",
+   "type": "IB",
+   "description": "IB Diploma history focusing on 20th-century topics and source analysis.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "aliases": [
+    "IB History of the Americas"
+   ]
+  },
+  {
+   "id": "ib-economics",
+   "name": "IB Economics",
+   "subject": "Social Studies",
+   "type": "IB",
+   "description": "IB Diploma micro-, macro- and global economics.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "aliases": [
+    "IB Econ"
+   ]
+  },
+  {
+   "id": "ib-psychology",
+   "name": "IB Psychology",
+   "subject": "Social Studies",
+   "type": "IB",
+   "description": "IB Diploma psychology covering biological, cognitive and sociocultural approaches.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "aliases": [
+    "IB Psych"
+   ]
+  },
+  {
+   "id": "ib-global-politics",
+   "name": "IB Global Politics",
+   "subject": "Social Studies",
+   "type": "IB",
+   "description": "IB Diploma course on power, rights and global issues.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ]
+  },
+  {
+   "id": "spanish-i",
+   "name": "Spanish I",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Beginning vocabulary, pronunciation and everyday conversation.",
+   "grades": [
+    9,
+    10
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "spanish",
+   "step": 1,
+   "aliases": [
+    "Spanish 1"
+   ]
+  },
+  {
+   "id": "spanish-ii",
+   "name": "Spanish II",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Builds grammar and conversation skills from Level I.",
+   "grades": [
+    9,
+    10,
+    11
+   ],
+   "prerequisites": [
+    "Spanish I"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "spanish",
+   "step": 2,
+   "aliases": [
+    "Spanish 2"
+   ]
+  },
+  {
+   "id": "spanish-iii",
+   "name": "Spanish III",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Longer conversations, reading and writing; most selective colleges like to see at least this level.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Spanish II"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "spanish",
+   "step": 3,
+   "aliases": [
+    "Spanish 3"
+   ]
+  },
+  {
+   "id": "spanish-iv",
+   "name": "Spanish IV",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Advanced reading, writing and discussion; often the step before AP.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Spanish III"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "spanish",
+   "step": 4,
+   "aliases": [
+    "Spanish 4"
+   ]
+  },
+  {
+   "id": "french-i",
+   "name": "French I",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Beginning vocabulary, pronunciation and everyday conversation.",
+   "grades": [
+    9,
+    10
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "french",
+   "step": 1,
+   "aliases": [
+    "French 1"
+   ]
+  },
+  {
+   "id": "french-ii",
+   "name": "French II",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Builds grammar and conversation skills from Level I.",
+   "grades": [
+    9,
+    10,
+    11
+   ],
+   "prerequisites": [
+    "French I"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "french",
+   "step": 2,
+   "aliases": [
+    "French 2"
+   ]
+  },
+  {
+   "id": "french-iii",
+   "name": "French III",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Longer conversations, reading and writing; most selective colleges like to see at least this level.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [
+    "French II"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "french",
+   "step": 3,
+   "aliases": [
+    "French 3"
+   ]
+  },
+  {
+   "id": "french-iv",
+   "name": "French IV",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Advanced reading, writing and discussion; often the step before AP.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "French III"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "french",
+   "step": 4,
+   "aliases": [
+    "French 4"
+   ]
+  },
+  {
+   "id": "german-i",
+   "name": "German I",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Beginning vocabulary, pronunciation and everyday conversation.",
+   "grades": [
+    9,
+    10
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "german",
+   "step": 1,
+   "aliases": [
+    "German 1"
+   ]
+  },
+  {
+   "id": "german-ii",
+   "name": "German II",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Builds grammar and conversation skills from Level I.",
+   "grades": [
+    9,
+    10,
+    11
+   ],
+   "prerequisites": [
+    "German I"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "german",
+   "step": 2,
+   "aliases": [
+    "German 2"
+   ]
+  },
+  {
+   "id": "german-iii",
+   "name": "German III",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Longer conversations, reading and writing; most selective colleges like to see at least this level.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [
+    "German II"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "german",
+   "step": 3,
+   "aliases": [
+    "German 3"
+   ]
+  },
+  {
+   "id": "german-iv",
+   "name": "German IV",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Advanced reading, writing and discussion; often the step before AP.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "German III"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "german",
+   "step": 4,
+   "aliases": [
+    "German 4"
+   ]
+  },
+  {
+   "id": "chinese-i",
+   "name": "Chinese I",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Beginning vocabulary, pronunciation and everyday conversation.",
+   "grades": [
+    9,
+    10
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "chinese",
+   "step": 1,
+   "aliases": [
+    "Chinese 1",
+    "Mandarin I"
+   ]
+  },
+  {
+   "id": "chinese-ii",
+   "name": "Chinese II",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Builds grammar and conversation skills from Level I.",
+   "grades": [
+    9,
+    10,
+    11
+   ],
+   "prerequisites": [
+    "Chinese I"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "chinese",
+   "step": 2,
+   "aliases": [
+    "Chinese 2",
+    "Mandarin II"
+   ]
+  },
+  {
+   "id": "chinese-iii",
+   "name": "Chinese III",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Longer conversations, reading and writing; most selective colleges like to see at least this level.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Chinese II"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "chinese",
+   "step": 3,
+   "aliases": [
+    "Chinese 3",
+    "Mandarin III"
+   ]
+  },
+  {
+   "id": "chinese-iv",
+   "name": "Chinese IV",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Advanced reading, writing and discussion; often the step before AP.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Chinese III"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "chinese",
+   "step": 4,
+   "aliases": [
+    "Chinese 4",
+    "Mandarin IV"
+   ]
+  },
+  {
+   "id": "japanese-i",
+   "name": "Japanese I",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Beginning vocabulary, pronunciation and everyday conversation.",
+   "grades": [
+    9,
+    10
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "japanese",
+   "step": 1,
+   "aliases": [
+    "Japanese 1"
+   ]
+  },
+  {
+   "id": "japanese-ii",
+   "name": "Japanese II",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Builds grammar and conversation skills from Level I.",
+   "grades": [
+    9,
+    10,
+    11
+   ],
+   "prerequisites": [
+    "Japanese I"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "japanese",
+   "step": 2,
+   "aliases": [
+    "Japanese 2"
+   ]
+  },
+  {
+   "id": "japanese-iii",
+   "name": "Japanese III",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Longer conversations, reading and writing; most selective colleges like to see at least this level.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Japanese II"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "japanese",
+   "step": 3,
+   "aliases": [
+    "Japanese 3"
+   ]
+  },
+  {
+   "id": "japanese-iv",
+   "name": "Japanese IV",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Advanced reading, writing and discussion; often the step before AP.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Japanese III"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "japanese",
+   "step": 4,
+   "aliases": [
+    "Japanese 4"
+   ]
+  },
+  {
+   "id": "latin-i",
+   "name": "Latin I",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Beginning Latin grammar and vocabulary, plus Roman culture.",
+   "grades": [
+    9,
+    10
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "latin",
+   "step": 1,
+   "aliases": [
+    "Latin 1"
+   ]
+  },
+  {
+   "id": "latin-ii",
+   "name": "Latin II",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "More Latin grammar and reading adapted Roman texts.",
+   "grades": [
+    9,
+    10,
+    11
+   ],
+   "prerequisites": [
+    "Latin I"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "latin",
+   "step": 2,
+   "aliases": [
+    "Latin 2"
+   ]
+  },
+  {
+   "id": "latin-iii",
+   "name": "Latin III",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Reading original Latin authors like Caesar and Cicero.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Latin II"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "latin",
+   "step": 3,
+   "aliases": [
+    "Latin 3"
+   ]
+  },
+  {
+   "id": "latin-iv",
+   "name": "Latin IV",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Advanced reading of Latin poetry and prose; often the step before AP Latin.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Latin III"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "latin",
+   "step": 4,
+   "aliases": [
+    "Latin 4"
+   ]
+  },
+  {
+   "id": "american-sign-language-i",
+   "name": "American Sign Language I",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Beginning ASL signs, fingerspelling and Deaf culture.",
+   "grades": [
+    9,
+    10
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "asl",
+   "step": 1,
+   "aliases": [
+    "American Sign Language 1",
+    "ASL I"
+   ]
+  },
+  {
+   "id": "american-sign-language-ii",
+   "name": "American Sign Language II",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Builds ASL grammar and conversation.",
+   "grades": [
+    9,
+    10,
+    11
+   ],
+   "prerequisites": [
+    "American Sign Language I"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "track": "asl",
+   "step": 2,
+   "aliases": [
+    "American Sign Language 2",
+    "ASL II"
+   ]
+  },
+  {
+   "id": "american-sign-language-iii",
+   "name": "American Sign Language III",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Longer ASL conversations and storytelling; counts as a world language at many schools and colleges.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [
+    "American Sign Language II"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "asl",
+   "step": 3,
+   "aliases": [
+    "American Sign Language 3",
+    "ASL III"
+   ]
+  },
+  {
+   "id": "american-sign-language-iv",
+   "name": "American Sign Language IV",
+   "subject": "World Language",
+   "type": "Core",
+   "description": "Advanced ASL fluency and Deaf studies.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "American Sign Language III"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "track": "asl",
+   "step": 4,
+   "aliases": [
+    "American Sign Language 4",
+    "ASL IV"
+   ]
+  },
+  {
+   "id": "ap-chinese-language-and-culture",
+   "name": "AP Chinese Language and Culture",
+   "subject": "World Language",
+   "type": "AP",
+   "description": "College-level Chinese taught in the language: conversation, reading, writing and culture.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Chinese IV"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "track": "chinese",
+   "step": 5,
+   "aliases": [
+    "AP Chinese"
+   ]
+  },
+  {
+   "id": "ap-french-language-and-culture",
+   "name": "AP French Language and Culture",
+   "subject": "World Language",
+   "type": "AP",
+   "description": "College-level French taught in the language: conversation, reading, writing and culture.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "French IV"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "track": "french",
+   "step": 5,
+   "aliases": [
+    "AP French"
+   ]
+  },
+  {
+   "id": "ap-german-language-and-culture",
+   "name": "AP German Language and Culture",
+   "subject": "World Language",
+   "type": "AP",
+   "description": "College-level German taught in the language: conversation, reading, writing and culture.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "German IV"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "track": "german",
+   "step": 5,
+   "aliases": [
+    "AP German"
+   ]
+  },
+  {
+   "id": "ap-italian-language-and-culture",
+   "name": "AP Italian Language and Culture",
+   "subject": "World Language",
+   "type": "AP",
+   "description": "College-level Italian taught in the language: conversation, reading, writing and culture.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "track": "italian",
+   "step": 5,
+   "aliases": [
+    "AP Italian"
+   ]
+  },
+  {
+   "id": "ap-japanese-language-and-culture",
+   "name": "AP Japanese Language and Culture",
+   "subject": "World Language",
+   "type": "AP",
+   "description": "College-level Japanese taught in the language: conversation, reading, writing and culture.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Japanese IV"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "track": "japanese",
+   "step": 5,
+   "aliases": [
+    "AP Japanese"
+   ]
+  },
+  {
+   "id": "ap-latin",
+   "name": "AP Latin",
+   "subject": "World Language",
+   "type": "AP",
+   "description": "College-level reading and translation of Vergil and Caesar in the original Latin.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Latin IV"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "track": "latin",
+   "step": 5,
+   "aliases": []
+  },
+  {
+   "id": "ap-spanish-language-and-culture",
+   "name": "AP Spanish Language and Culture",
+   "subject": "World Language",
+   "type": "AP",
+   "description": "College-level Spanish taught in the language: conversation, reading, writing and culture.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Spanish IV"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "track": "spanish",
+   "step": 5,
+   "aliases": [
+    "AP Spanish Language",
+    "AP Spanish"
+   ]
+  },
+  {
+   "id": "ap-spanish-literature-and-culture",
+   "name": "AP Spanish Literature and Culture",
+   "subject": "World Language",
+   "type": "AP",
+   "description": "College-level reading and analysis of Spanish-language literature, taught in Spanish.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "AP Spanish Language and Culture"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "track": "spanish",
+   "step": 6,
+   "aliases": [
+    "AP Spanish Literature",
+    "AP Spanish Lit"
+   ]
+  },
+  {
+   "id": "ib-spanish-b",
+   "name": "IB Spanish B",
+   "subject": "World Language",
+   "type": "IB",
+   "description": "IB Diploma Spanish for students who have already studied the language for a few years.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "track": "spanish",
+   "step": 4
+  },
+  {
+   "id": "ib-spanish-ab-initio",
+   "name": "IB Spanish ab initio",
+   "subject": "World Language",
+   "type": "IB",
+   "description": "IB Diploma beginner Spanish for students new to the language (SL only).",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL"
+   ],
+   "track": "spanish",
+   "step": 1
+  },
+  {
+   "id": "ib-french-b",
+   "name": "IB French B",
+   "subject": "World Language",
+   "type": "IB",
+   "description": "IB Diploma French for students who have already studied the language for a few years.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "track": "french",
+   "step": 4
+  },
+  {
+   "id": "ib-french-ab-initio",
+   "name": "IB French ab initio",
+   "subject": "World Language",
+   "type": "IB",
+   "description": "IB Diploma beginner French for students new to the language (SL only).",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL"
+   ],
+   "track": "french",
+   "step": 1
+  },
+  {
+   "id": "ib-german-b",
+   "name": "IB German B",
+   "subject": "World Language",
+   "type": "IB",
+   "description": "IB Diploma German for students who have already studied the language for a few years.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "track": "german",
+   "step": 4
+  },
+  {
+   "id": "ib-german-ab-initio",
+   "name": "IB German ab initio",
+   "subject": "World Language",
+   "type": "IB",
+   "description": "IB Diploma beginner German for students new to the language (SL only).",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL"
+   ],
+   "track": "german",
+   "step": 1
+  },
+  {
+   "id": "ib-mandarin-b",
+   "name": "IB Mandarin B",
+   "subject": "World Language",
+   "type": "IB",
+   "description": "IB Diploma Mandarin for students who have already studied the language for a few years.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "track": "chinese",
+   "step": 4
+  },
+  {
+   "id": "ib-mandarin-ab-initio",
+   "name": "IB Mandarin ab initio",
+   "subject": "World Language",
+   "type": "IB",
+   "description": "IB Diploma beginner Mandarin for students new to the language (SL only).",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL"
+   ],
+   "track": "chinese",
+   "step": 1
+  },
+  {
+   "id": "ib-latin",
+   "name": "IB Latin",
+   "subject": "World Language",
+   "type": "IB",
+   "description": "IB Diploma classical language course reading Latin texts (no ab initio option).",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "track": "latin",
+   "step": 4
+  },
+  {
+   "id": "art-i",
+   "name": "Art I",
+   "subject": "Arts",
+   "type": "Elective",
+   "description": "Introduction to drawing, painting, design and art history.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular"
+   ],
+   "aliases": [
+    "Intro to Art",
+    "Visual Art I"
+   ]
+  },
+  {
+   "id": "drawing-and-painting",
+   "name": "Drawing and Painting",
+   "subject": "Arts",
+   "type": "Elective",
+   "description": "Developing drawing and painting skills across different media.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Art I"
+   ],
+   "levels": [
+    "Regular",
+    "Honors"
+   ]
+  },
+  {
+   "id": "ceramics",
+   "name": "Ceramics",
+   "subject": "Arts",
+   "type": "Elective",
+   "description": "Hand-building and wheel-throwing with clay.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ]
+  },
+  {
+   "id": "photography",
+   "name": "Photography",
+   "subject": "Arts",
+   "type": "Elective",
+   "description": "Composition, lighting and editing with digital or film cameras.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ]
+  },
+  {
+   "id": "digital-art-and-graphic-design",
+   "name": "Digital Art and Graphic Design",
+   "subject": "Arts",
+   "type": "Elective",
+   "description": "Creating digital illustrations, logos and layouts with design software.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "aliases": [
+    "Graphic Design"
+   ]
+  },
+  {
+   "id": "band",
+   "name": "Band",
+   "subject": "Arts",
+   "type": "Elective",
+   "description": "Instrumental ensemble performing concerts; many students take it all four years.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "aliases": [
+    "Concert Band",
+    "Marching Band"
+   ]
+  },
+  {
+   "id": "orchestra",
+   "name": "Orchestra",
+   "subject": "Arts",
+   "type": "Elective",
+   "description": "String ensemble performing concerts.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ]
+  },
+  {
+   "id": "chorus",
+   "name": "Chorus",
+   "subject": "Arts",
+   "type": "Elective",
+   "description": "Vocal ensemble performing concerts.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "aliases": [
+    "Choir"
+   ]
+  },
+  {
+   "id": "theater",
+   "name": "Theater",
+   "subject": "Arts",
+   "type": "Elective",
+   "description": "Acting, stagecraft and putting on productions.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "aliases": [
+    "Theatre",
+    "Drama"
+   ]
+  },
+  {
+   "id": "dance",
+   "name": "Dance",
+   "subject": "Arts",
+   "type": "Elective",
+   "description": "Technique, choreography and performance.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ]
+  },
+  {
+   "id": "ap-art-history",
+   "name": "AP Art History",
+   "subject": "Arts",
+   "type": "AP",
+   "description": "College-level survey of art and architecture from around the world.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ]
+  },
+  {
+   "id": "ap-music-theory",
+   "name": "AP Music Theory",
+   "subject": "Arts",
+   "type": "AP",
+   "description": "College-level study of how music is built: notation, harmony and ear training.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ]
+  },
+  {
+   "id": "ap-2-d-art-and-design",
+   "name": "AP 2-D Art and Design",
+   "subject": "Arts",
+   "type": "AP",
+   "description": "Building a portfolio of two-dimensional design work (graphic design, photography, collage).",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "aliases": [
+    "AP 2D Art"
+   ]
+  },
+  {
+   "id": "ap-3-d-art-and-design",
+   "name": "AP 3-D Art and Design",
+   "subject": "Arts",
+   "type": "AP",
+   "description": "Building a portfolio of three-dimensional work (sculpture, ceramics, installation).",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "aliases": [
+    "AP 3D Art"
+   ]
+  },
+  {
+   "id": "ap-drawing",
+   "name": "AP Drawing",
+   "subject": "Arts",
+   "type": "AP",
+   "description": "Building a portfolio focused on drawing and mark-making.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ]
+  },
+  {
+   "id": "ib-visual-arts",
+   "name": "IB Visual Arts",
+   "subject": "Arts",
+   "type": "IB",
+   "description": "IB Diploma studio art with a process portfolio and exhibition.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ]
+  },
+  {
+   "id": "ib-music",
+   "name": "IB Music",
+   "subject": "Arts",
+   "type": "IB",
+   "description": "IB Diploma music: performing, creating and analyzing music.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ]
+  },
+  {
+   "id": "ib-theatre",
+   "name": "IB Theatre",
+   "subject": "Arts",
+   "type": "IB",
+   "description": "IB Diploma theater: creating, performing and researching theater.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "aliases": [
+    "IB Theater"
+   ]
+  },
+  {
+   "id": "introduction-to-computer-science",
+   "name": "Introduction to Computer Science",
+   "subject": "Computer Science",
+   "type": "Core",
+   "description": "Problem solving and basic programming, often with Python or block-based code.",
+   "grades": [
+    9,
+    10
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "aliases": [
+    "Intro to Computer Science",
+    "Intro to CS",
+    "Computer Science I"
+   ]
+  },
+  {
+   "id": "programming",
+   "name": "Programming",
+   "subject": "Computer Science",
+   "type": "Elective",
+   "description": "Writing larger programs in a language like Python or Java.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Introduction to Computer Science"
+   ],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "aliases": [
+    "Computer Programming",
+    "Computer Science II"
+   ]
+  },
+  {
+   "id": "web-design",
+   "name": "Web Design",
+   "subject": "Computer Science",
+   "type": "Elective",
+   "description": "Building websites with HTML, CSS and JavaScript.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ]
+  },
+  {
+   "id": "robotics",
+   "name": "Robotics",
+   "subject": "Computer Science",
+   "type": "Elective",
+   "description": "Designing, building and programming robots.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ]
+  },
+  {
+   "id": "ap-computer-science-principles",
+   "name": "AP Computer Science Principles",
+   "subject": "Computer Science",
+   "type": "AP",
+   "description": "College-level intro to computing: programming, data, the internet and computing's impact.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "aliases": [
+    "AP CSP"
+   ]
+  },
+  {
+   "id": "ap-computer-science-a",
+   "name": "AP Computer Science A",
+   "subject": "Computer Science",
+   "type": "AP",
+   "description": "College-level Java programming: objects, data structures and algorithms.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [
+    "Algebra I"
+   ],
+   "levels": [
+    "AP"
+   ],
+   "aliases": [
+    "AP CSA",
+    "AP Comp Sci A"
+   ]
+  },
+  {
+   "id": "ap-cybersecurity",
+   "name": "AP Cybersecurity",
+   "subject": "Computer Science",
+   "type": "AP",
+   "description": "AP Career Kickstart course on protecting networks, devices and data (newer; not offered at most schools yet).",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ]
+  },
+  {
+   "id": "ap-networking",
+   "name": "AP Networking",
+   "subject": "Computer Science",
+   "type": "AP",
+   "description": "AP Career Kickstart course on how computer networks are designed and run (newer; not offered at most schools yet).",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ]
+  },
+  {
+   "id": "ib-computer-science",
+   "name": "IB Computer Science",
+   "subject": "Computer Science",
+   "type": "IB",
+   "description": "IB Diploma computer science with a programming project.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB SL",
+    "IB HL"
+   ],
+   "aliases": [
+    "IB CS"
+   ]
+  },
+  {
+   "id": "health",
+   "name": "Health",
+   "subject": "Electives",
+   "type": "Elective",
+   "description": "Nutrition, mental health, safety and wellness; a graduation requirement in many states.",
+   "grades": [
+    9,
+    10
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular"
+   ]
+  },
+  {
+   "id": "physical-education",
+   "name": "Physical Education",
+   "subject": "Electives",
+   "type": "Elective",
+   "description": "Fitness, sports skills and teamwork.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular"
+   ],
+   "aliases": [
+    "PE",
+    "Gym"
+   ]
+  },
+  {
+   "id": "personal-finance",
+   "name": "Personal Finance",
+   "subject": "Electives",
+   "type": "Elective",
+   "description": "Budgeting, banking, credit, taxes and investing.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "aliases": [
+    "Financial Literacy"
+   ]
+  },
+  {
+   "id": "business",
+   "name": "Business",
+   "subject": "Electives",
+   "type": "Elective",
+   "description": "Introduction to how businesses start, market and manage money.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors"
+   ],
+   "aliases": [
+    "Intro to Business",
+    "Marketing"
+   ]
+  },
+  {
+   "id": "yearbook",
+   "name": "Yearbook",
+   "subject": "Electives",
+   "type": "Elective",
+   "description": "Designing and producing the school yearbook.",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular"
+   ]
+  },
+  {
+   "id": "career-and-technical-education",
+   "name": "Career and Technical Education",
+   "subject": "Electives",
+   "type": "Elective",
+   "description": "Hands-on career pathway courses such as culinary arts, health science, engineering design or automotive.",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "Regular",
+    "Honors",
+    "Dual Enrollment"
+   ],
+   "aliases": [
+    "CTE"
+   ]
+  },
+  {
+   "id": "ap-seminar",
+   "name": "AP Seminar",
+   "subject": "Electives",
+   "type": "AP",
+   "description": "AP Capstone course: research, team projects and presentations on real-world issues.",
+   "grades": [
+    10,
+    11
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ]
+  },
+  {
+   "id": "ap-research",
+   "name": "AP Research",
+   "subject": "Electives",
+   "type": "AP",
+   "description": "AP Capstone course: a year-long independent research project and paper.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [
+    "AP Seminar"
+   ],
+   "levels": [
+    "AP"
+   ]
+  },
+  {
+   "id": "ap-business-with-personal-finance",
+   "name": "AP Business with Personal Finance",
+   "subject": "Electives",
+   "type": "AP",
+   "description": "AP Career Kickstart course on running a business and managing personal money (newer; not offered at most schools yet).",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "AP"
+   ],
+   "aliases": [
+    "AP Business"
+   ]
+  },
+  {
+   "id": "ib-theory-of-knowledge",
+   "name": "IB Theory of Knowledge",
+   "subject": "Electives",
+   "type": "IB",
+   "description": "Required IB Diploma core course about how we know what we know.",
+   "grades": [
+    11,
+    12
+   ],
+   "prerequisites": [],
+   "levels": [
+    "IB"
+   ],
+   "aliases": [
+    "TOK"
+   ]
+  }
+ ]
+}

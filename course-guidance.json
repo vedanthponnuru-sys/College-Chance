@@ -1,0 +1,45 @@
+{
+  "majors": [
+    {
+      "label": "Computer Science / Engineering",
+      "keywords": ["computer science", "computer engineering", "software", "engineering", " cs", "cs "],
+      "prioritySubjects": ["Math", "Science", "Computer Science"],
+      "courses": ["AP Calculus AB", "AP Calculus BC", "AP Physics 1: Algebra-Based", "AP Physics C: Mechanics", "AP Computer Science A"]
+    },
+    {
+      "label": "Pre-Med / Biology / Nursing",
+      "keywords": ["pre-med", "premed", "biology", "nursing", "medicine", "biomedical"],
+      "prioritySubjects": ["Science", "Math"],
+      "courses": ["AP Biology", "AP Chemistry", "AP Statistics"]
+    },
+    {
+      "label": "Business / Economics",
+      "keywords": ["business", "economics", "finance", "accounting", "marketing"],
+      "prioritySubjects": ["Math", "Social Studies"],
+      "courses": ["AP Macroeconomics", "AP Microeconomics", "AP Statistics", "AP Calculus AB"]
+    },
+    {
+      "label": "English / Communications / Law",
+      "keywords": ["english", "communications", "journalism", "pre-law", "political science", " law"],
+      "prioritySubjects": ["English", "Social Studies"],
+      "courses": ["AP English Language and Composition", "AP English Literature and Composition", "AP United States History", "AP United States Government and Politics"]
+    },
+    {
+      "label": "Psychology / Social Sciences",
+      "keywords": ["psychology", "sociology", "social work", "social science"],
+      "prioritySubjects": ["Social Studies", "Science"],
+      "courses": ["AP Psychology", "AP Statistics"]
+    },
+    {
+      "label": "Arts / Design",
+      "keywords": ["art", "design", "architecture", "music", "theater", "theatre", "film"],
+      "prioritySubjects": ["Arts"],
+      "courses": ["AP 2-D Art and Design", "AP Drawing", "AP Art History"]
+    }
+  ],
+  "undecided": {
+    "label": "Undecided",
+    "prioritySubjects": [],
+    "note": "Focus on a well-rounded core plus 1-2 AP courses in subjects you enjoy most."
+  }
+}

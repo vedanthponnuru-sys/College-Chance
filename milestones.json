@@ -1,0 +1,17 @@
+{
+  "note": "Typical timing — check exact dates with your school and colleges.",
+  "milestones": [
+    { "id": "psat", "title": "PSAT/NMSQT", "detail": "Practice for the SAT. In 11th grade it's also the National Merit Scholarship qualifier.", "month": 10, "day": 15, "grades": [10, 11] },
+    { "id": "fafsa", "title": "FAFSA and financial aid forms open", "detail": "The FAFSA usually opens around October 1. Some colleges also ask for the CSS Profile.", "month": 10, "day": 1, "grades": [12] },
+    { "id": "test-fall-12", "title": "Last SAT/ACT dates for fall applications", "detail": "Many seniors retake the SAT or ACT in October or November.", "month": 10, "day": 4, "grades": [12] },
+    { "id": "early-deadlines", "title": "Early action / early decision deadlines", "detail": "Often November 1 or November 15.", "month": 11, "day": 1, "grades": [12] },
+    { "id": "regular-deadlines", "title": "Regular decision deadlines", "detail": "Often between January 1 and February 1.", "month": 1, "day": 1, "grades": [12] },
+    { "id": "semester-feb", "title": "Update your grades for the new semester", "detail": "First semester ends around the end of January — update your GPA and courses here.", "month": 2, "day": 1, "grades": [8, 9, 10, 11, 12] },
+    { "id": "registration", "title": "Course registration for next year", "detail": "Usually in winter or early spring. Plan next year's courses with your counselor.", "month": 2, "day": 15, "grades": [8, 9, 10, 11] },
+    { "id": "test-spring-11", "title": "Take the SAT or ACT", "detail": "Spring of 11th grade is a common time for a first official SAT or ACT.", "month": 3, "day": 14, "grades": [11] },
+    { "id": "decisions", "title": "College decisions due", "detail": "May 1 is the usual deadline to pick a college and send a deposit.", "month": 5, "day": 1, "grades": [12] },
+    { "id": "ap-exams", "title": "AP exams", "detail": "AP exams are given over two weeks in early-to-mid May.", "month": 5, "day": 4, "grades": [9, 10, 11, 12] },
+    { "id": "college-list", "title": "Build your college list", "detail": "The summer before 12th grade is a good time to finish your list and start essays.", "month": 7, "day": 1, "grades": [11] },
+    { "id": "semester-jul", "title": "Update your grades after the school year", "detail": "Second semester ends around the end of June — update your GPA and courses here.", "month": 7, "day": 1, "grades": [8, 9, 10, 11, 12] }
+  ]
+}
