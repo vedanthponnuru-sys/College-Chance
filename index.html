@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Chance</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%8E%93</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <p id="file-protocol-warning" class="file-warning" hidden>
+    <strong>Heads up:</strong> this page was opened directly from a file, so most of the app can't run &mdash;
+    browsers block that for security. Serve this folder instead, e.g. run
+    <code>python -m http.server 8000</code> here and open
+    <code>http://localhost:8000</code>.
+  </p>
+
+  <div id="semester-banner" class="semester-banner" hidden>
+    <p>New semester! Update your grades and courses so your college matches stay accurate.</p>
+    <div class="semester-banner-actions">
+      <button type="button" id="semester-update-btn" class="btn">Update now</button>
+      <button type="button" id="semester-dismiss-btn" class="btn">Remind me later</button>
+    </div>
+  </div>
+
+  <header class="app-header">
+    <div class="app-brand">
+      <span class="app-logo" aria-hidden="true">🎓</span>
+      <h1>College Chance</h1>
+    </div>
+    <p class="tagline">See how you compare to admitted students at any US college.</p>
+    <p class="greeting" id="greeting" hidden>
+      <span id="greeting-text"></span>
+      <span id="grade-badge" class="grade-badge"></span>
+      <button type="button" id="edit-profile-btn" class="link-btn">Edit profile</button>
+      <button type="button" id="show-tutorial-btn" class="link-btn">Show tutorial</button>
+      <button type="button" id="show-privacy-btn" class="link-btn">How this works &amp; your privacy</button>
+    </p>
+  </header>
+
+  <div id="tutorial-backdrop" class="tutorial-backdrop" hidden></div>
+  <div
+    id="tutorial-tooltip"
+    class="tutorial-tooltip"
+    hidden
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="tutorial-title"
+    aria-describedby="tutorial-desc"
+  >
+    <p class="tutorial-step-count" id="tutorial-step-count"></p>
+    <h3 id="tutorial-title"></h3>
+    <p id="tutorial-desc"></p>
+    <div class="tutorial-actions">
+      <button type="button" id="tutorial-skip-btn" class="link-btn">Skip</button>
+      <div class="tutorial-nav-buttons">
+        <button type="button" id="tutorial-back-btn" class="btn">Back</button>
+        <button type="button" id="tutorial-next-btn" class="btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="welcome-overlay" class="overlay" hidden>
+    <div class="overlay-card">
+      <h2 id="welcome-heading">Welcome to College Chance!</h2>
+      <p class="hint" id="welcome-subheading">Let's set up your profile &mdash; this stays on your device, there's no account or password.</p>
+      <form id="welcome-form" novalidate>
+        <div class="field">
+          <label for="welcome-firstName">First name</label>
+          <input type="text" id="welcome-firstName" name="firstName" placeholder="e.g. Maya" maxlength="40" required />
+          <p class="field-error" id="welcome-firstName-error" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="welcome-lastName">Last name</label>
+          <input type="text" id="welcome-lastName" name="lastName" placeholder="e.g. Smith" maxlength="40" required />
+          <p class="field-error" id="welcome-lastName-error" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="welcome-grade">Grade</label>
+          <select id="welcome-grade" name="grade" required>
+            <option value="">Select your grade&hellip;</option>
+          </select>
+          <p class="field-error" id="welcome-grade-error" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="welcome-highSchool">High school</label>
+          <input type="text" id="welcome-highSchool" name="highSchool" placeholder="e.g. Lincoln High School" maxlength="100" required />
+          <p class="field-error" id="welcome-highSchool-error" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="welcome-gradYear">Graduation year</label>
+          <select id="welcome-gradYear" name="gradYear" required>
+            <option value="">Select a year&hellip;</option>
+          </select>
+          <p class="field-error" id="welcome-gradYear-error" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="welcome-major">Intended major <span class="optional-tag">(optional)</span></label>
+          <input type="text" id="welcome-major" name="major" placeholder="Start typing, e.g. Computer Science" maxlength="80" />
+        </div>
+
+        <div class="overlay-actions">
+          <button type="submit" class="btn-primary" id="welcome-submit-btn">Get Started</button>
+          <button type="button" class="btn" id="welcome-cancel-btn" hidden>Cancel</button>
+        </div>
+      </form>
+
+      <p class="welcome-import-hint" id="welcome-import-hint">
+        Already have a backup?
+        <button type="button" id="welcome-import-btn" class="link-btn">Import it</button>
+      </p>
+    </div>
+  </div>
+
+  <div id="privacy-overlay" class="overlay" hidden>
+    <div class="overlay-card">
+      <h2>How This Works &amp; Your Privacy</h2>
+      <p>We never see your information. Everything you enter stays only in this browser on this device. There's no account, no server, and nothing is sent to us or anyone else.</p>
+      <p>Reach / Target / Safety labels come from simple rules: we compare your test scores to the middle 50% of admitted students at each college (from U.S. Department of Education College Scorecard data), then adjust for how selective the college is.</p>
+      <p>These are estimates, not predictions. Colleges also look at essays, recommendations, activities and context this app can't see.</p>
+      <p>Clearing your browser data will erase your info, so use <strong>Export Backup</strong> (on My Profile) to save a copy.</p>
+      <div class="overlay-actions">
+        <button type="button" id="privacy-close-btn" class="btn-primary">Got it</button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Sections">
+    <button
+      type="button"
+      id="tabs-menu-toggle"
+      class="tabs-menu-toggle"
+      aria-expanded="false"
+      aria-controls="tabs-menu-list"
+      aria-label="Open navigation menu"
+    >
+      <span class="tabs-menu-icon" aria-hidden="true">&#9776;</span>
+    </button>
+    <div class="tabs-menu-backdrop" id="tabs-menu-backdrop"></div>
+    <div class="tabs-menu-list" id="tabs-menu-list">
+      <div class="tabs-menu-header">
+        <span class="tabs-menu-header-title">Menu</span>
+        <button type="button" id="tabs-menu-close-btn" class="tabs-menu-close" aria-label="Close menu">&#10005;</button>
+      </div>
+      <button id="tabbtn-dashboard" class="tab-btn active" data-tab="dashboard" role="tab" aria-selected="true" aria-controls="tab-dashboard" tabindex="0">Dashboard</button>
+      <button id="tabbtn-profile" class="tab-btn" data-tab="profile" role="tab" aria-selected="false" aria-controls="tab-profile" tabindex="-1">My Profile</button>
+      <button id="tabbtn-courses" class="tab-btn" data-tab="courses" role="tab" aria-selected="false" aria-controls="tab-courses" tabindex="-1">My Courses</button>
+      <button id="tabbtn-activities" class="tab-btn" data-tab="activities" role="tab" aria-selected="false" aria-controls="tab-activities" tabindex="-1">My Activities</button>
+      <button id="tabbtn-search" class="tab-btn" data-tab="search" role="tab" aria-selected="false" aria-controls="tab-search" tabindex="-1">Search Colleges</button>
+      <button id="tabbtn-mylist" class="tab-btn" data-tab="mylist" role="tab" aria-selected="false" aria-controls="tab-mylist" tabindex="-1">My College List</button>
+      <button id="tabbtn-documents" class="tab-btn" data-tab="documents" role="tab" aria-selected="false" aria-controls="tab-documents" tabindex="-1">My Documents</button>
+    </div>
+  </nav>
+
+  <script>
+    (function () {
+      if (window.location.protocol === "file:") {
+        var banner = document.getElementById("file-protocol-warning");
+        if (banner) banner.hidden = false;
+      }
+
+      var buttons = Array.prototype.slice.call(document.querySelectorAll(".tab-btn"));
+      var menuToggle = document.getElementById("tabs-menu-toggle");
+      var menuList = document.getElementById("tabs-menu-list");
+      var menuBackdrop = document.getElementById("tabs-menu-backdrop");
+      var menuCloseBtn = document.getElementById("tabs-menu-close-btn");
+
+      function closeTabsMenu() {
+        menuList.classList.remove("open");
+        menuBackdrop.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      }
+
+      function openTabsMenu() {
+        menuList.classList.add("open");
+        menuBackdrop.classList.add("open");
+        menuToggle.setAttribute("aria-expanded", "true");
+      }
+
+      menuToggle.addEventListener("click", function () {
+        if (menuList.classList.contains("open")) closeTabsMenu();
+        else openTabsMenu();
+      });
+
+      menuCloseBtn.addEventListener("click", function () {
+        closeTabsMenu();
+        menuToggle.focus();
+      });
+
+      menuBackdrop.addEventListener("click", function () {
+        closeTabsMenu();
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!menuList.classList.contains("open")) return;
+        if (menuToggle.contains(event.target) || menuList.contains(event.target)) return;
+        closeTabsMenu();
+      });
+
+      menuList.addEventListener("focusout", function (event) {
+        var next = event.relatedTarget;
+        if (next && (menuList.contains(next) || menuToggle.contains(next))) return;
+        closeTabsMenu();
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && menuList.classList.contains("open")) {
+          closeTabsMenu();
+          menuToggle.focus();
+        }
+      });
+
+      function activate(button, options) {
+        options = options || {};
+
+        buttons.forEach(function (b) {
+          var selected = b === button;
+          b.classList.toggle("active", selected);
+          b.setAttribute("aria-selected", String(selected));
+          b.tabIndex = selected ? 0 : -1;
+        });
+
+        document.querySelectorAll(".tab-panel").forEach(function (panel) {
+          panel.classList.remove("active");
+        });
+
+        var panel = document.getElementById("tab-" + button.dataset.tab);
+        if (panel) panel.classList.add("active");
+
+        if (options.closeMenu !== false) closeTabsMenu();
+
+        if (options.focus) button.focus();
+      }
+
+      buttons.forEach(function (button, index) {
+        button.addEventListener("click", function () {
+          activate(button, { closeMenu: true });
+        });
+
+        button.addEventListener("keydown", function (event) {
+          var targetIndex = null;
+          if (event.key === "ArrowRight") targetIndex = (index + 1) % buttons.length;
+          else if (event.key === "ArrowLeft") targetIndex = (index - 1 + buttons.length) % buttons.length;
+          else if (event.key === "Home") targetIndex = 0;
+          else if (event.key === "End") targetIndex = buttons.length - 1;
+
+          if (targetIndex !== null) {
+            event.preventDefault();
+            activate(buttons[targetIndex], { focus: true, closeMenu: false });
+          }
+        });
+      });
+    })();
+  </script>
+
+  <main>
+    <section id="tab-dashboard" class="tab-panel active dashboard" role="tabpanel" aria-labelledby="tabbtn-dashboard">
+      <div class="dash-header">
+        <div>
+          <h2 class="dash-title">College Chance</h2>
+          <p class="dash-tagline">Your future, one step at a time</p>
+        </div>
+        <span class="grade-badge" id="dash-grade-badge"></span>
+      </div>
+
+      <button type="button" class="dash-card career-card" id="career-card">
+        <span class="career-icon" id="career-icon" aria-hidden="true">🎯</span>
+        <span class="career-text">
+          <span class="dash-label">My career goal</span>
+          <span class="career-title" id="career-title"></span>
+          <span class="career-field" id="career-field"></span>
+        </span>
+        <span class="career-edit" aria-hidden="true">Edit</span>
+      </button>
+
+      <div class="dash-stats">
+        <div class="dash-card stat-card">
+          <span class="dash-label">Core plan completed</span>
+          <span class="stat-number" id="core-percent">0%</span>
+          <div id="core-progress"></div>
+          <span class="stat-sub" id="core-units"></span>
+        </div>
+        <button type="button" class="dash-card stat-card stat-button" id="milestones-btn" aria-expanded="false" aria-controls="milestones-panel">
+          <span class="dash-label">Upcoming milestones</span>
+          <span class="stat-number" id="milestones-count">0</span>
+          <span class="stat-sub">Next 90 days</span>
+          <span class="stat-link">Show list</span>
+        </button>
+      </div>
+
+      <section class="dash-card milestones-panel" id="milestones-panel" hidden aria-labelledby="milestones-heading">
+        <h3 id="milestones-heading">Upcoming milestones</h3>
+        <ul class="milestone-list" id="milestones-list"></ul>
+        <p class="note" id="milestones-note"></p>
+      </section>
+
+      <section class="dash-card" aria-labelledby="roadmap-heading">
+        <h3 id="roadmap-heading">My academic roadmap</h3>
+        <ul class="roadmap-list" id="roadmap-list"></ul>
+      </section>
+
+      <section class="dash-card" aria-labelledby="next-steps-heading">
+        <h3 id="next-steps-heading">Your next steps</h3>
+        <ul class="next-steps" id="next-steps"></ul>
+      </section>
+
+      <button type="button" class="btn-dark" id="explore-roadmap-btn">Explore my roadmap &rarr;</button>
+      <p class="note dash-footer" id="dash-footer"></p>
+    </section>
+
+    <section id="tab-profile" class="tab-panel" role="tabpanel" aria-labelledby="tabbtn-profile">
+      <h2>My Academic Profile</h2>
+      <p class="hint">Fill this in once &mdash; it's saved in your browser so you won't need to enter it again.</p>
+      <p class="profile-grade-line">
+        <strong>Grade:</strong> <span id="profile-grade-text"></span>
+        <button type="button" id="profile-change-grade-btn" class="link-btn">Change</button>
+      </p>
+      <form id="profile-form" novalidate>
+        <div class="field" id="gpa-field">
+          <label for="gpa">Unweighted GPA (4.0 scale)</label>
+          <input type="number" id="gpa" name="gpa" min="0" max="4" step="0.01" placeholder="e.g. 3.85" />
+          <p class="field-error" id="gpa-error" aria-live="polite"></p>
+        </div>
+
+        <details class="test-scores" id="test-scores-details">
+          <summary id="test-scores-summary">Have test scores? (optional)</summary>
+          <div class="field">
+            <label for="sat">SAT total score</label>
+            <input type="number" id="sat" name="sat" min="400" max="1600" step="10" placeholder="e.g. 1350 (leave blank if none)" />
+            <p class="field-error" id="sat-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="act">ACT composite score</label>
+            <input type="number" id="act" name="act" min="1" max="36" step="1" placeholder="e.g. 29 (leave blank if none)" />
+            <p class="field-error" id="act-error" aria-live="polite"></p>
+          </div>
+        </details>
+
+        <div class="field">
+          <label>AP / IB / Honors / Dual Enrollment courses</label>
+          <p class="hint" id="profile-ap-count-display"></p>
+        </div>
+
+        <div class="field">
+          <label for="state">Home state</label>
+          <select id="state" name="state">
+            <option value="">Select a state&hellip;</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-primary">Save Profile</button>
+        <span id="profile-saved-msg" class="saved-msg" aria-live="polite"></span>
+      </form>
+
+      <p class="hint" id="profile-last-updated"></p>
+      <button type="button" id="add-calendar-reminder-btn" class="btn">Add reminder to my calendar</button>
+
+      <section class="data-actions">
+        <h3>Backup &amp; Restore</h3>
+        <p class="hint">Download a backup of your name/grade/school info, academic profile, courses, activities, college list and document records &mdash; or restore from one. Everything stays on this device; nothing is uploaded anywhere.</p>
+        <div class="data-actions-buttons">
+          <button type="button" id="export-backup-btn" class="btn">Export Backup</button>
+          <button type="button" id="import-backup-btn" class="btn">Import Backup</button>
+          <input type="file" id="import-backup-file" accept="application/json" hidden />
+        </div>
+        <p class="saved-msg" id="backup-msg" aria-live="polite"></p>
+      </section>
+    </section>
+
+    <section id="tab-courses" class="tab-panel" role="tabpanel" aria-labelledby="tabbtn-courses">
+      <section id="subject-page" class="subject-page" hidden aria-labelledby="subject-page-title">
+        <button type="button" id="subject-back-btn" class="back-btn">&larr; Back to My Courses</button>
+        <h2 id="subject-page-title"></h2>
+        <div class="subject-rec" id="subject-page-rec"></div>
+        <h3>Your courses</h3>
+        <div id="subject-page-mine"></div>
+        <h3>Course catalog</h3>
+        <p class="hint">Typical grades and prerequisites vary by school &mdash; check your school's course guide.</p>
+        <div id="subject-page-catalog"></div>
+      </section>
+
+      <div id="courses-main">
+      <h2>My Courses</h2>
+      <p class="hint" id="courses-tier-hint"></p>
+
+      <section class="suggestions-card" id="suggestions-card" hidden>
+        <h3>Suggested Courses</h3>
+
+        <div id="suggestions-core-plan"></div>
+        <div id="suggestions-nc" hidden></div>
+        <div id="suggestions-rigor"></div>
+        <div id="suggestions-major"></div>
+
+        <p class="hint" id="suggestions-senior-note" hidden></p>
+        <p class="note" id="suggestions-footer-note"></p>
+      </section>
+
+      <form id="course-form" novalidate>
+        <div class="field">
+          <label for="course-subject">Subject</label>
+          <select id="course-subject" name="subject" required>
+            <option value="">Select a subject&hellip;</option>
+          </select>
+          <p class="field-error" id="course-subject-error" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="course-name">Course name</label>
+          <input type="text" id="course-name" name="name" placeholder="Start typing, e.g. AP Biology" maxlength="80" required />
+          <p class="field-error" id="course-name-error" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="course-level">Level</label>
+          <select id="course-level" name="level"></select>
+          <p class="hint field-hint" id="course-level-hint" hidden></p>
+        </div>
+
+        <div class="field">
+          <label for="course-status">Status</label>
+          <select id="course-status" name="status"></select>
+        </div>
+
+        <div class="field">
+          <label for="course-year" id="course-year-label">School year</label>
+          <select id="course-year" name="schoolYear"></select>
+          <p class="hint field-hint" id="course-year-hint" hidden></p>
+        </div>
+
+        <div class="field">
+          <label for="course-semester">Semester</label>
+          <select id="course-semester" name="semester"></select>
+        </div>
+
+        <div class="field" id="course-grade-field" hidden>
+          <label for="course-grade">Final grade</label>
+          <select id="course-grade" name="grade"></select>
+        </div>
+
+        <div class="field" id="course-lab-field" hidden>
+          <label class="inline-check"><input type="checkbox" id="course-lab" name="isLabScience" /> <span>Lab science</span></label>
+          <p class="hint field-hint" id="course-lab-hint" hidden></p>
+        </div>
+
+        <button type="submit" class="btn-primary" id="course-submit-btn">Add Course</button>
+        <button type="button" id="course-add-another-btn" class="btn">Add Another</button>
+        <button type="button" id="course-cancel-edit-btn" class="btn btn-secondary" hidden>Cancel</button>
+        <span id="course-saved-msg" class="saved-msg" aria-live="polite"></span>
+      </form>
+
+      <h3 id="my-years-heading">My 4 years</h3>
+      <div id="year-rows" class="year-rows"></div>
+      </div>
+    </section>
+
+    <section id="tab-activities" class="tab-panel" role="tabpanel" aria-labelledby="tabbtn-activities">
+      <h2>My Activities</h2>
+      <p class="hint">Clubs, sports, jobs, service, family duties &mdash; anything you spend real time on.</p>
+
+      <section class="suggestions-card activity-ideas" id="activity-ideas-card" hidden>
+        <h3>Ideas to strengthen your activities</h3>
+        <p class="stage-note" id="activity-stage"></p>
+        <ul class="suggestion-list" id="activity-ideas-list"></ul>
+        <button type="button" class="link-btn" id="activity-ideas-more" aria-expanded="false" aria-controls="activity-ideas-list" hidden>Show more ideas</button>
+        <p class="hint" id="activity-jobs-note"></p>
+        <p class="note" id="activity-footer-note"></p>
+      </section>
+
+      <form id="activity-form" class="activity-form" novalidate>
+        <h3 id="activity-form-title">Add an activity</h3>
+        <div class="field">
+          <label for="activity-name">Activity</label>
+          <input type="text" id="activity-name" name="name" placeholder="e.g. Robotics Club" maxlength="80" required />
+          <p class="field-error" id="activity-name-error" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="activity-category">Category</label>
+          <select id="activity-category" name="category" required>
+            <option value="">Choose one&hellip;</option>
+          </select>
+          <p class="field-error" id="activity-category-error" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="activity-role">Your role <span class="optional-tag">(optional)</span></label>
+          <input type="text" id="activity-role" name="role" placeholder="e.g. Member, Captain, Cashier" maxlength="80" />
+        </div>
+
+        <div class="field">
+          <label for="activity-hours">Hours per week</label>
+          <input type="number" id="activity-hours" name="hoursPerWeek" min="0.5" max="80" step="0.5" placeholder="e.g. 4" required />
+          <p class="field-error" id="activity-hours-error" aria-live="polite"></p>
+        </div>
+
+        <label class="switch-row" for="activity-leadership">
+          <input type="checkbox" id="activity-leadership" name="leadership" role="switch" class="switch" />
+          <span>Leadership role</span>
+        </label>
+
+        <details class="more-details" id="activity-more">
+          <summary>More details (optional)</summary>
+          <fieldset class="field">
+            <legend>Grades involved</legend>
+            <div id="activity-grades" class="checkbox-group"></div>
+          </fieldset>
+
+          <div class="field">
+            <label for="activity-weeks">Weeks per year</label>
+            <input type="number" id="activity-weeks" name="weeksPerYear" min="1" max="52" step="1" placeholder="e.g. 30" />
+            <p class="field-error" id="activity-weeks-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="activity-achievement">Achievement or award</label>
+            <input type="text" id="activity-achievement" name="achievement" placeholder="e.g. Raised $1,200 for the food bank" maxlength="150" />
+          </div>
+
+          <div class="field">
+            <label for="activity-description">Description</label>
+            <textarea id="activity-description" name="description" rows="3" maxlength="300" placeholder="What you do and what you've accomplished"></textarea>
+          </div>
+        </details>
+
+        <div class="form-buttons">
+          <button type="submit" class="btn-primary" id="activity-submit-btn">Add Activity</button>
+          <button type="button" class="btn btn-secondary" id="activity-cancel-edit-btn" hidden>Cancel</button>
+        </div>
+        <span id="activity-saved-msg" class="saved-msg" aria-live="polite"></span>
+      </form>
+
+      <h3>Your activities</h3>
+      <p class="hint" id="activities-empty-hint">Nothing added yet.</p>
+      <ul id="activities-list" class="activity-cards"></ul>
+    </section>
+
+    <section id="tab-search" class="tab-panel" role="tabpanel" aria-labelledby="tabbtn-search">
+      <h2>Search Colleges</h2>
+      <div class="field">
+        <label for="search-input">Search by name or state</label>
+        <input type="search" id="search-input" placeholder="e.g. &quot;Michigan&quot; or &quot;CA&quot;" />
+      </div>
+      <div class="search-controls">
+        <label class="inline-check" id="major-filter-label">
+          <input type="checkbox" id="major-filter-toggle" />
+          <span id="major-filter-text">Only colleges with my major</span>
+        </label>
+        <div class="field search-sort-field">
+          <label for="search-sort">Sort by</label>
+          <select id="search-sort">
+            <option value="name">Name</option>
+            <option value="admitRate">Admission rate (lowest first)</option>
+            <option value="majorSize">Biggest programs in my major</option>
+          </select>
+        </div>
+      </div>
+      <p class="hint" id="major-filter-hint"></p>
+      <p class="hint" id="search-loading-hint">Loading colleges&hellip;</p>
+      <p class="hint" id="search-truncated-hint" hidden></p>
+      <ul id="search-results" class="college-list"></ul>
+    </section>
+
+    <section id="tab-mylist" class="tab-panel" role="tabpanel" aria-labelledby="tabbtn-mylist">
+      <h2>My College List</h2>
+      <p class="hint" id="mylist-empty-hint">You haven't added any colleges yet. Go to Search Colleges to add some.</p>
+      <ul id="mylist-results" class="college-list"></ul>
+    </section>
+
+    <section id="tab-documents" class="tab-panel" role="tabpanel" aria-labelledby="tabbtn-documents">
+      <h2>My Documents</h2>
+      <p class="hint">Upload your transcript, resume, essays and other application documents here. They're stored only in this browser &mdash; nothing is uploaded to a server.</p>
+
+      <form id="documents-form" novalidate>
+        <div class="field">
+          <label for="doc-file">File (PDF, Word, or image)</label>
+          <input type="file" id="doc-file" name="docFile" accept=".pdf,.doc,.docx,image/*" required />
+        </div>
+
+        <div class="field">
+          <label for="doc-type">Document type</label>
+          <select id="doc-type" name="docType"></select>
+        </div>
+
+        <fieldset class="field">
+          <div class="field-label-row">
+            <legend>Link to colleges in My List</legend>
+            <button type="button" id="doc-select-all-btn" class="link-btn" hidden>Select all</button>
+          </div>
+          <div id="doc-college-checkboxes" class="checkbox-group">
+            <p class="hint" id="doc-no-colleges-hint">Add colleges to My College List first to link documents to them.</p>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-primary">Upload Document</button>
+        <span id="doc-upload-msg" class="saved-msg" aria-live="polite"></span>
+      </form>
+
+      <h3>Uploaded Documents</h3>
+      <p class="hint" id="documents-loading-hint">Loading documents&hellip;</p>
+      <p class="hint" id="documents-empty-hint">You haven't uploaded any documents yet.</p>
+      <ul id="documents-list" class="college-list"></ul>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>Built with Claude Code for the 2026 Congressional App Challenge. Data from the U.S. Dept. of Education College Scorecard.</p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
